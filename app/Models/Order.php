@@ -6,17 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Routing\Exceptions\BackedEnumCaseNotFoundException;
 
-class User extends Model
+class Order extends Model
 {
     use HasFactory;
-    public function adress(): HasOne
+    public function user(): HasOne
     {
-        return $this->hasOne(Adress::class);
+        return $this->hasOne(User::class);
     }
-    public function orders(): BelongsTo
+    public function order_pizzas(): BelongsTo
     {
-        return $this->belongsTo(Order::class);
+        return $this->belongsTo(Order_Pizzas::class);
     }
 }
