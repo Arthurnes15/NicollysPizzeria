@@ -1,7 +1,7 @@
 export const Register = () => {
     return(
-        <>
-            <h1>Registro</h1>
-        </>
+       
+        <h1>Registro</h1>
+        
     )
 }
