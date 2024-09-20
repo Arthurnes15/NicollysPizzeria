@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'lato-bold';
+    src: url(../../assets/fonts/lato/Lato-Bold.ttf);
+}
+
+.container-register {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    width: 35vw;
+    height: 74vh;
+    border-radius: 8px;
+    background-color: #faf0dc;
+}
+
+.logo > img {
+    width: 8vw;
+    height: auto;
+}
+
+.title > img {
+    width: 15vw;
+    height: auto;
+}
+
+.header-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.register > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.text-field > label {
+    font-size: 14px;
+    font-family: 'lato-bold';
+    padding-bottom: 5px;
+}
+
+.text-field > input {
+    width: 25vw;
+    height: 2vw;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text-field > input:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 1px #C64A33;
+}
+
+.text-field__address {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.text-field__address > .text-field {
+    margin: 0px 8px 0px 10px;
+}
+
+.text-field__address > .text-field > input {
+    width: 12vw;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button > button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 15vw;
+    height: 2vw;
+    border: none;
+    border-radius: 6px;
+    background-color: #C64A33;
+    color: white;
+    margin: 20px 0;
+    padding: 8px 10px;
+}

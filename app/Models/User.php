@@ -11,9 +11,9 @@ use Illuminate\Routing\Exceptions\BackedEnumCaseNotFoundException;
 class User extends Model
 {
     use HasFactory;
-    public function adress(): HasOne
+    public function address(): HasOne
     {
-        return $this->hasOne(Adress::class);
+        return $this->hasOne(Address::class);
     }
     public function orders(): BelongsTo
     {
